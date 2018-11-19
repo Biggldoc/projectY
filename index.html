@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>An Online Registration Form</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link class="main_styles" rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Exo:300,400,600,700,700i" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="header__main_heading">The Code Review</h1>
+    <div class="theme_selector">
+      <span class="theme_selector__switch">Default</span>
+      <span class="theme_selector__switch">Cyberpunk</span>
+      <span class="theme_selector__switch">Dark-red</span>
+    </div>
+    <div class="container">
+      <h2 class="header__heading">Signup for our newsletter</h2>
+      <p class="header__text">
+        Get the latest news on how your code is doing right in your inbox
+      </p>
+    </div>
+  </header>
+
+  <div class="container">
+    <form class="signup_form" action="index.html" method="post">
+
+      <fieldset class="contact_field">
+        <legend class="default_legend">Contact Information</legend>
+
+        <div class="contact_field__row">
+          <label class="default_label" for="name">Full Name</label>
+          <input class="default_input" id="name" type="text" name="user_name" placeholder="Required" required>
+        </div>
+        <div class="contact_field__row">
+          <label class="default_label" for="email">Email Address</label>
+          <input class="default_input" id="email" type="email" name="user_email" placeholder="Required" required>
+        </div>
+        <div class="contact_field__row">
+          <label class="default_label" for="phone">Phone Number</label>
+          <input class="default_input" id="phone" type="tel" name="user_pnone" placeholder="+123-324-567">
+        </div>
+        <div class="contact_field__row">
+          <label class="default_label" for="address">Street Address</label>
+          <input class="default_input" id="address" type="text" name="user_address" placeholder="221b, Baker street">
+        </div>
+        <div class="contact_field__row">
+          <label class="default_label" for="city">City</label>
+          <input class="default_input" id="city" type="text" name="user_city" placeholder="San Fancisco">
+        </div>
+        <div class="contact_field__row">
+          <label class="default_label" for="state">State</label>
+          <select class="default_select user_state" id="state" name="user_state">
+                <option class="select_placeholder" value="" disabled selected>Choose State</option>
+                <optgroup label="A">
+                  <option value="alabama">Alabama</option>
+                  <option value="alaska">Alaska</option>
+                  <option value="arizona">Arizona</option>
+                  <option value="arkansas">Arkansas</option>
+                </optgroup>
+                <optgroup label="C"> 
+                  <option value="california">California</option>
+                  <option value="colorado">Colorado</option>
+                  <option value="connecticut">Connecticut</option>
+                </optgroup>
+                <optgroup label="D">
+                  <option value="delaware">Delaware</option>
+                  <option value="district_of_columbia">District Of Columbia</option>
+                </optgroup>
+                <optgroup label="F">
+                  <option value="florida">Florida</option>
+                </optgroup>
+                <optgroup label="G">
+                  <option value="georgia">Georgia</option>
+                </optgroup>
+                <optgroup label="H">
+                  <option value="hawaii">Hawaii</option>
+                </optgroup>
+                <optgroup label="I">
+                  <option value="idaho">Idaho</option>
+                  <option value="illinois">Illinois</option>
+                  <option value="indiana">Indiana</option>
+              </optgroup>
+            </select>
+        </div>
+        <div class="contact_field__row d_mobile_none_f">
+          <label class="default_label" title="Want promocode? Click" for="promocode">Secret promo-code</label>
+          <input class="default_input" id="promocode" type="text" name="user_promocode" placeholder="S3CR3T PR0M0C0D3">
+        </div>
+        <div class="contact_field__row">
+          <label class="default_label" for="zipcode">Zip Code</label>
+          <input class="default_input zip_code_input" id="zipcode" type="text" name="user_zip">
+        </div>
+      </fieldset>
+      <fieldset class="news_field">
+        <legend class="default_legend">Newsletter</legend>
+
+        <label class="news_field__main_label">Select the newsletters you would like to recieve</label>
+        <div class="checkbox_container">
+          <input class="default_checkbox" id="news-html" type="checkbox" value="news_html" name="user_news"><label class="news_field__label" for="news-html">HTML News</label>
+        </div>
+        <div class="checkbox_container">
+          <input class="default_checkbox" id="news-css" type="checkbox" value="news_css" name="user_news"><label class="news_field__label" for="news-css">CSS News</label>
+        </div>
+        <div class="checkbox_container">
+          <input class="default_checkbox" id="news-js" type="checkbox" value="news_js" name="user_news"><label class="news_field__label" for="news-js">Javascript News</label>
+        </div>
+        <label class="news_format__heading">Newsletter format</label>
+        <label class="default_label news_label" for="news-format-html"><input class="default_radio" id="news-format-html" type="radio" name="news_format" value="news_format_html">HTML</label>
+        <label class="default_label news_label" for="news-format-text"><input class="default_radio" id="news-format-text" type="radio" name="news_format" value="news_format_text">Plain text</label>
+        <label class="news_format__heading" for="user-topics">Other topics you'd like to hear about</label>
+        <textarea class="news_textarea" name="user_topics" id="user-topics"></textarea>
+      </fieldset>
+      <button class="default_btn signup_btn" type="submit">Sign Up</button>
+      <address class="copyrights ">Copyright The Code Review</address>
+    </form>
+  </div>
+  <script src="js/script.js "></script>
+</body>
+
+</html>

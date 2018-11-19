@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+h1 {
+  color: #A6C525;
+  text-align: center;
+}
+
+.link_home {
+  font-size: 40px;
+  color: #A6C525;
+  text-decoration: none;
+  padding: 10px;
+  background-color: #000;
+  display: inline-block;
+  border: 1px solid #A6C525;
+  border-radius: 5px;
+  transition: .4s all;
+}
+
+.link_home:hover {
+  transform: scale(1.2);
+}
+
+.puzzle_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 500px;
+  margin: 0 auto;
+}
+
+.puzzle_item {
+  width: 150px;
+  height: 150px;
+  border: 2px solid #fff;
+  background-color: #000;
+  line-height: 150px;
+  text-align: center;
+  color: #A6C525;
+  font-size: 24px;
+}
+
+.puzzle_item span {
+  display: none;
+}
+
+@media (min-width: 639px) and (max-width: 646px) {
+  .puzzle_item span.promo_letter {
+    display: inline;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 721px) {
+  .puzzle_item span.promo_letter_one {
+    display: inline;
+  }
+}
+
+@media (min-width: 950px) and (max-width: 960px) {
+  .puzzle_item span.promo_letter_two {
+    display: inline;
+  }
+}
+
+@media (min-width: 810px) and (max-width: 841px) {
+  .puzzle_item span.promo_letter_three {
+    display: inline;
+  }
+}
+
+@media (min-width: 910px) and (max-width: 941px) {
+  .puzzle_item span.promo_letter_four {
+    display: inline;
+  }
+}

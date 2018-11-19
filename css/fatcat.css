@@ -1,0 +1,9 @@
+body {
+  background: url("../img/fatcat.jpg") no-repeat top center / cover;
+}
+
+h1 {
+  text-align: center;
+  background-color: #fff;
+  font: 5em sans-serif;
+}
